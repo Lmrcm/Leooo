@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leomar Simple Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #004080;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-family: Georgia, serif;
+        }
+
+        .header-image {
+            display: block;
+            margin: 20px auto;
+            width: 250px;   
+            height: 250px;  
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid black;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #0066cc;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-family: Verdana, sans-serif;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background: white;
+            color: #0066cc;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #0066cc;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Welcome to Leomar Simple Page</h2>
+    </header>
+
+    
+    <img src="pics.jpg" class="header-image">
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#achivements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>
+                I'm Leomar C. Manseña live in Mariveles, Bataan and Still in College of PUP Bataan and i'm still learning about more programming language that i want to learn for my future.  
+            </p>
+        </div>
+    </section>
+
+    <section id="achivements">
+        <div class="content">
+            <h2>Achievements</h2>
+           
+                   <h5>TESDA CERTIFICATE</h5>
+                <ul> Introduction to CSS</ul>
+				<ul> Setting Up Computer Networks</ul>
+				<ul> Installing and Configuring Computer Systems</ul>
+			
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content">
+            <h2>Contact</h2>
+            <p>
+                Want to reach me? You can reach me at:
+                <br>Email: <a href="mailto:leomarmansena2412@gmail.com">leomarmansena2412@gmail.com</a>
+                <br>Address: Mariveles Bataan, Philippines
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
